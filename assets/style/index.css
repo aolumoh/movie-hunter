@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/*--------------------*/
+/* Generic classes    */
+/*--------------------*/
+
+:root {
+  --background-dark: rgb(24, 23, 32);
+  --button-color: rgb(41, 147, 255);
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-1 {
+  gap: 1px;
+}
+
+.gap-2 {
+  gap: 2px;
+}
+
+/*--------------------*/
+/*         Main       */
+/*--------------------*/
+body {
+  background-color: var(--background-dark);
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+section>div {
+  align-items: center;
+  margin-top: 200px;
+  color: #fff;
+}
+
+input[type=text] {
+  border-radius: 2px;
+  height: 35px;
+  width: 250px;
+  margin-bottom: 1px;
+  padding: 4px;
+}
+
+input[type=button] {
+  background-color: var(--button-color);
+  border-radius: 4px;
+  height: 35px;
+  border: 1px solid #ffffff65;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+ul {
+  background-color: #fff;
+  color: #000;
+  border-radius: 2px;
+}
+
+.matched-movies {
+  width: 250px;
+  position: relative;
+}
+
+.list {
+  position: absolute;
+  z-index: 2;
+}
+
+ul p {
+  width: 250px;
+}
+
+li {
+  padding: 4px;
+}
+
+li:hover {
+  background-color: #faf4f4;
+  cursor: pointer;
+}
+
+img {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.movie-info {
+  margin-left: 20px;
+}
